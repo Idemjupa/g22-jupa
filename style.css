@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grilla__body {
+  height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: grid;
+  border: 1px solid green;
+  padding: 20px;
+    display: grid;
+  grid-template-columns: 200px auto 200px;
+  grid-template-rows:100px auto 100px; 
+  grid-gap:1rem;
+grid-template-areas: 
+"cabecera cabecera cabecera"
+"navegador seccion aside"
+"pie pie aside"
+;
+
+}
+.h1{
+    width: 100%;
+}
+
+.cabecera {
+  background-color: aqua;
+  grid-area: cabecera;
+}
+.navegador {
+  background-color: aquamarine;
+  grid-area: navegador;
+}
+.aside{
+    background-color: blue;
+    grid-area: aside;
+}
+.seccion{
+    background-color: blueviolet;
+    grid-area:seccion;
+}
+.pie{
+    background-color: brown;
+    grid-area: pie;
+}
